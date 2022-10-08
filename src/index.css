@@ -2,7 +2,7 @@
 :root {
   --color-white: #ffffff;
   --color-black: #000000;
-  --color-gray-100: #f2f1f0;
+  --color-gray-100: #e2dfdb;
   --color-gray-200: #696969;
   --color-gray-300: #696f8c;
   --color-blue-100: #78abe0;
@@ -43,6 +43,8 @@ body {
   line-height: 1.5;
   text-rendering: optimizespeed;
   background-image: url('./images/phonebook.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 p,

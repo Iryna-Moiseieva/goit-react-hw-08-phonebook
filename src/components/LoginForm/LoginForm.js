@@ -30,7 +30,7 @@ export default function LoginForm () {
 
   return (
       <Container>
-        <Section title="Log In">
+        <Section title="LogIn">
           <Form  onSubmit={handleSubmit} autoComplete="off">
             <Label>Email
               <InputEmail/>
@@ -38,7 +38,7 @@ export default function LoginForm () {
             <Label>Password
               <InputPassword />
             </Label>
-              <ButtonSubmit>Log In</ButtonSubmit>
+              <ButtonSubmit text="LogIn"></ButtonSubmit>
           </Form>
         </Section>
       </Container>

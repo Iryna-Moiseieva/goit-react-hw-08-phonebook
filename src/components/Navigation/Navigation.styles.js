@@ -31,7 +31,7 @@ export const LinkStyled = styled(NavLink)`
   align-items: center;
   height: 100%;
   font-weight: 400;
-  font-size: var(--font-size-200);
+  font-size: var(--font-size-500);
   color: var(--color-gray-300);
 
   &:hover,

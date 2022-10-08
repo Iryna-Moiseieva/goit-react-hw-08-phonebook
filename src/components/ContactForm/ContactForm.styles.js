@@ -1,6 +1,8 @@
 import styled from 'styled-components';
+import Button from '../Button';
 
 export const Form = styled.form`
+  width: 350px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -14,7 +16,7 @@ export const Form = styled.form`
 export const Label = styled.label`
   margin-bottom: 15px;
   font-weight: 600;
-  font-size: var(--font-size-300);
+  font-size: var(--font-size-400);
   color: var(--color-blue-200);
 `;
 
@@ -32,10 +34,11 @@ export const InputName = styled.input.attrs(() => ({
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px var(--color-gray-100);
   background-color: inherit;
+
   &::placeholder {
     font-family: inherit;
-    font-size: var(--font-size-100);
-    color: var(--color-gray-200);
+    font-size: var(--font-size-300);
+    color: var(--color-white);
   }
   &:hover,
   &:focus {
@@ -44,7 +47,7 @@ export const InputName = styled.input.attrs(() => ({
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &:not(:placeholder-shown) {
-    color: var(--color-gray-200);
+    color: var(--color-white);
   }
 `;
 
@@ -64,8 +67,8 @@ export const InputNumber = styled.input.attrs(() => ({
   background-color: inherit;
   &::placeholder {
     font-family: inherit;
-    font-size: var(--font-size-100);
-    color: var(--color-gray-200);
+    font-size: var(--font-size-300);
+    color: var(--color-white);
   }
   &:hover,
   &:focus {
@@ -74,27 +77,12 @@ export const InputNumber = styled.input.attrs(() => ({
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &:not(:placeholder-shown) {
-    color: var(--color-gray-200);
+    color: var(--color-white);
   }
 `;
 
-export const ButtonSubmit = styled.button.attrs(() => ({
+export const ButtonSubmit = styled(Button).attrs(() => ({
   type: 'submit',
 }))`
-  display: block;
-  margin: 0;
-  min-width: 150px;
-  height: 40px;
-  padding: 6px;
-  text-align: center;
-  text-decoration: none;
-  color: var(--color-white);
-  font-size: var(--font-size-200);
-  background-color: var(--color-blue-200);
-  border: 1px solid transparent;
-  border-radius: 4px;
-  transition: background-color 0.2s ease;
-  &:hover {
-    background-color: var(--color-blue-100);
-  }
+font-size: var(--font-size-400);
 `;

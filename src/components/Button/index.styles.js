@@ -3,14 +3,12 @@ import styled from 'styled-components';
 export const StyledButton = styled.button`
   display: block;
   margin: 0;
-  min-width: 80px;
-  height: 40px;
+  min-width: 200px;
   padding: 10px;
-
   text-align: center;
   text-decoration: none;
   color: var(--color-white);
-  font-size: var(--font-size-200);
+  font-size: var(--font-size-500);
   background-color: var(--color-blue-200);
   border: 1px solid transparent;
   border-radius: 4px;

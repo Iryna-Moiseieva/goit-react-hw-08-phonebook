@@ -14,10 +14,11 @@ export const InputEmail = styled.input.attrs(() => ({
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px var(--color-gray-100);
   background-color: inherit;
+
   &::placeholder {
     font-family: inherit;
-    font-size: var(--font-size-100);
-    color: var(--color-gray-200);
+    font-size: var(--font-size-300);
+    color: var(--color-white);
   }
   &:hover,
   &:focus {
@@ -26,7 +27,7 @@ export const InputEmail = styled.input.attrs(() => ({
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &:not(:placeholder-shown) {
-    color: var(--color-gray-200);
+    color: var(--color-white);
   }
 `;
 
@@ -46,8 +47,8 @@ export const InputPassword = styled.input.attrs(() => ({
   background-color: inherit;
   &::placeholder {
     font-family: inherit;
-    font-size: var(--font-size-100);
-    color: var(--color-gray-200);
+    font-size: var(--font-size-300);
+    color: var(--color-white);
   }
   &:hover,
   &:focus {
@@ -56,7 +57,7 @@ export const InputPassword = styled.input.attrs(() => ({
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &:not(:placeholder-shown) {
-    color: var(--color-gray-200);
+    color: var(--color-white);
   }
 `;
 

@@ -51,8 +51,7 @@ export default function RegisterForm () {
       {/* <ButtonSubmit disabled={isLoading}>
         {isLoading ? <Loader size={10} /> : 'Register'}
       </ButtonSubmit> */}
-                  <ButtonSubmit>Register
-      </ButtonSubmit>
+        <ButtonSubmit text="Register"></ButtonSubmit>
           </Form>
 
         </Section>

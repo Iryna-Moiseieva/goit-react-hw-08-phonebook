@@ -1,10 +1,12 @@
 import styled from 'styled-components';
+import Button from '../Button';
 
 export const Container = styled.li`
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-weight: 500;
+  font-size: var(--font-size-300);
 
   &:not(:last-child) {
     margin-bottom: 5px;
@@ -30,23 +32,9 @@ export const Number = styled.span`
   color: var(--color-gray-300);
 `;
 
-export const ButtonDelete = styled.button.attrs(() => ({
+export const ButtonDelete = styled(Button).attrs(() => ({
   type: 'button',
 }))`
-  display: block;
-  margin: 0;
   min-width: 100px;
-  height: 30px;
-  padding: 5px;
-  text-align: center;
-  text-decoration: none;
-  color: var(--color-white);
-  font-size: var(--font-size-200);
-  background-color: var(--color-blue-200);
-  border: 1px solid transparent;
-  border-radius: 4px;
-  transition: background-color 0.2s ease;
-  &:hover {
-    background-color: var(--color-blue-100);
-  }
+  font-size: var(--font-size-300);
 `;
