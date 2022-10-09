@@ -1,24 +1,17 @@
-import { useEffect } from 'react';
+import { useEffect, lazy } from 'react';
 import { useDispatch } from 'react-redux';
-// import {  lazy } from 'react';
-import { Routes, Route, Outlet } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { refreshUser } from '../../redux/auth/operations';
 import { useAuth } from '../../hooks/useAuth';
 
-// import Layout from '../Layout';
-import Header from '../Header';
+import Layout from '../Layout';
 import PrivateRoute from 'components/PrivateRoute';
 import RestrictedRoute from 'components/RestrictedRoute';
 
-import HomePage from '../../pages/HomePage';
-import RegisterPage from '../../pages/RegisterPage';
-import LoginPage from '../../pages/LoginPage';
-import ContactsPage from '../../pages/ContactsPage';
-
-// const HomePage = lazy(() => import('../../pages/HomePage'));
-// const RegisterPage = lazy(() => import('../../pages/RegisterPage'));
-// const LoginPage = lazy(() => import('../../pages/LoginPage'));
-// const ContactsPage = lazy(() => import('../../pages/ContactsPage'));
+const HomePage = lazy(() => import('../../pages/HomePage'));
+const RegisterPage = lazy(() => import('../../pages/RegisterPage'));
+const LoginPage = lazy(() => import('../../pages/LoginPage'));
+const ContactsPage = lazy(() => import('../../pages/ContactsPage'));
 
 
 export default function App() {
@@ -33,15 +26,8 @@ export default function App() {
     <b>Refreshing user...</b>
   ) : (
     <div>
-      <Header />
-      {/* <nav>
-      <Link to="/">Home</Link>
-      <Link to="/register">Register</Link>
-      <Link to="/login">Login</Link>
-      <Link to="/contacts">Contacts</Link>
-    </nav> */}
       <Routes>
-        {/* <Route path="/" element={<Layout />}> */}
+        <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route
             path="/register"
@@ -58,9 +44,8 @@ export default function App() {
             element={
             <PrivateRoute redirectTo="/login" component={<ContactsPage />} />
             } />
-        {/* </Route> */}
+        </Route>
       </Routes>
-      <Outlet />
     </div>
   );
 };

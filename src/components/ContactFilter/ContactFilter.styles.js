@@ -9,7 +9,7 @@ export const Label = styled.label`
 `;
 
 export const FilterInput = styled.input.attrs(() => ({
-  type: 'search',
+  type: 'text',
   name: 'filter',
   autoComplete: 'off',
 }))`

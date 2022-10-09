@@ -15,9 +15,7 @@ export default function UserMenu() {
 
   return (
     <StyledHeaderAuth>
-
-          <UserProfile>Welcome, {user.name}</UserProfile>
-
+      <UserProfile>Welcome, {user.name}</UserProfile>
       <AuthBtn onClick={() => dispatch(logOut())} text='Log Out'/>
     </StyledHeaderAuth>
     )

@@ -15,9 +15,6 @@ export const Logo = styled(Link)`
 export const NavList = styled.ul`
   display: flex;
   margin: 0;
-  ${'' /* padding-top: 20px;
-  padding-bottom: 20px; */}
-  ${'' /* font-size: 24px; */}
 `;
 
 export const NavItem = styled.li`
@@ -31,7 +28,7 @@ export const LinkStyled = styled(NavLink)`
   align-items: center;
   height: 100%;
   font-weight: 400;
-  font-size: var(--font-size-500);
+  font-size: var(--font-size-700);
   color: var(--color-gray-300);
 
   &:hover,

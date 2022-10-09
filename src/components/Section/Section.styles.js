@@ -8,7 +8,6 @@ export const SectionStyled = styled.section`
 `;
 
 export const Title = styled.h2`
-  ${'' /* font-weight: 400; */}
   color: var(--color-blue-300);
   font-size: var(--font-size-600);
   margin: 15px auto;

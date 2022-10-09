@@ -1,9 +1,6 @@
 import { useDispatch } from 'react-redux';
-// import { useParams } from 'react-router-dom';
 import { deleteContact } from '../../redux/contacts/operations';
-// import { selectLoading } from '../../redux/contacts/selectors';
 import PropTypes from 'prop-types';
-// import Loader from '../Loader';
 import {
   ButtonDelete,
   IndexNumber,
@@ -14,8 +11,6 @@ import {
 } from './ContactItem.styles';
 
 export default function ContactItem({ id, name, number, index }) {
-// const { id: contactId } = useParams();
-  // const isLoading = useSelector(selectLoading);
   const dispatch = useDispatch();
   const handleDelete = () => dispatch(deleteContact(id));
 
@@ -26,7 +21,7 @@ export default function ContactItem({ id, name, number, index }) {
       <Name>{name}</Name>
         <Number>{number}</Number>
         </Wrapper>
-        <ButtonDelete onClick={handleDelete}>Delete
+        <ButtonDelete text="Delete" onClick={handleDelete}>
       </ButtonDelete>
     </Container>
   );

@@ -3,7 +3,6 @@ import { register } from '../../redux/auth/operations';
 
 import Section from '../Section';
 import Container from '../Container';
-// import Loader from '../Loader';
 import {
   Form,
   Label,
@@ -48,12 +47,8 @@ export default function RegisterForm () {
       <Label>Password
         <InputPassword/>
       </Label>
-      {/* <ButtonSubmit disabled={isLoading}>
-        {isLoading ? <Loader size={10} /> : 'Register'}
-      </ButtonSubmit> */}
         <ButtonSubmit text="Register"></ButtonSubmit>
           </Form>
-
         </Section>
         </Container>
       </>

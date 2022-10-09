@@ -84,5 +84,5 @@ export const InputNumber = styled.input.attrs(() => ({
 export const ButtonSubmit = styled(Button).attrs(() => ({
   type: 'submit',
 }))`
-font-size: var(--font-size-500);
+font-size: var(--font-size-400);
 `;

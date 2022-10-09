@@ -15,10 +15,6 @@ import {
 export default function ContactForm() {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
-  // const [addContact, { isLoading }] = useAddContactMutation();
-  // const { data: contacts } = useGetContactsQuery(undefined, {
-  //   skip: name === '',
-  // });
 
   const contacts = useSelector(selectAllContacts);
   const dispatch = useDispatch();
