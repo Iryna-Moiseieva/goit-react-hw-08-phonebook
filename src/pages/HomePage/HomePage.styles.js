@@ -9,6 +9,6 @@ export const Page = styled.div`
 
 export const Title = styled.div`
 font-weight: 700;
-  color: var(--color-blue-200);
-  font-size: var(--font-size-700);
+  color: var(--color-gray-300);
+  font-size: var(--font-size-800);
 `;
