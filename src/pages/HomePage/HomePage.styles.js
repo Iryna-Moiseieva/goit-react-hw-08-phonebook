@@ -7,7 +7,8 @@ export const Page = styled.div`
 `;
 
 export const Title = styled.h1`
-  margin: 0 auto;
+  margin: 30px auto;
+
   font-weight: 700;
   color: var(--color-gray-300);
   font-size: 60px;
