@@ -4,7 +4,7 @@ export const Label = styled.label`
   display: block;
   margin-bottom: 10px;
   font-weight: 600;
-  font-size: var(--font-size-300);
+  font-size: var(--font-size-500);
   color: var(--color-gray-300);
 `;
 
@@ -21,7 +21,7 @@ export const FilterInput = styled.input.attrs(() => ({
   background-color: inherit;
   &::placeholder {
     font-family: inherit;
-    font-size: var(--font-size-100);
+    font-size: var(--font-size-500);
     color: var(--color-gray-200);
   }
   &:hover,

@@ -22,7 +22,7 @@ export const UserProfile = styled.div`
     justify-content: center;
     margin-right: 10px;
     font-weight: 400;
-    font-size: var(--font-size-500);
+    font-size: var(--font-size-700);
     color: var(--color-gray-300);
 
 

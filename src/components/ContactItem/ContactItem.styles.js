@@ -6,7 +6,6 @@ export const Container = styled.li`
   align-items: center;
   justify-content: space-between;
   font-weight: 500;
-  font-size: var(--font-size-300);
 
   &:not(:last-child) {
     margin-bottom: 5px;
@@ -16,6 +15,7 @@ export const Container = styled.li`
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
+  font-size: var(--font-size-500);
 `;
 export const IndexNumber = styled.span`
   margin-right: 5px;

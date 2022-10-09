@@ -5,7 +5,6 @@ export const InputEmail = styled.input.attrs(() => ({
   name: 'email',
   autoComplete: 'off',
   required: true,
-  // pattern: `/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/`,
   title: `Example user@mail.com`,
 }))`
   display: block;
@@ -17,7 +16,7 @@ export const InputEmail = styled.input.attrs(() => ({
 
   &::placeholder {
     font-family: inherit;
-    font-size: var(--font-size-300);
+    font-size: var(--font-size-500);
     color: var(--color-white);
   }
   &:hover,
@@ -36,8 +35,6 @@ export const InputPassword = styled.input.attrs(() => ({
   name: 'password',
   autoComplete: 'off',
   required: true,
-  // pattern: `[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$`,
-
 }))`
   display: block;
   margin-top: 5px;
@@ -47,7 +44,7 @@ export const InputPassword = styled.input.attrs(() => ({
   background-color: inherit;
   &::placeholder {
     font-family: inherit;
-    font-size: var(--font-size-300);
+    font-size: var(--font-size-500);
     color: var(--color-white);
   }
   &:hover,

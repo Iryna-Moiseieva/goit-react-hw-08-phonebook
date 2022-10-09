@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Button from '../Button';
 
 export const Form = styled.form`
-  width: 350px;
+  width: 450px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -16,7 +16,7 @@ export const Form = styled.form`
 export const Label = styled.label`
   margin-bottom: 15px;
   font-weight: 600;
-  font-size: var(--font-size-400);
+  font-size: var(--font-size-500);
   color: var(--color-blue-200);
 `;
 
@@ -37,7 +37,7 @@ export const InputName = styled.input.attrs(() => ({
 
   &::placeholder {
     font-family: inherit;
-    font-size: var(--font-size-300);
+    font-size: var(--font-size-500);
     color: var(--color-white);
   }
   &:hover,
@@ -67,7 +67,7 @@ export const InputNumber = styled.input.attrs(() => ({
   background-color: inherit;
   &::placeholder {
     font-family: inherit;
-    font-size: var(--font-size-300);
+    font-size: var(--font-size-500);
     color: var(--color-white);
   }
   &:hover,
@@ -84,5 +84,5 @@ export const InputNumber = styled.input.attrs(() => ({
 export const ButtonSubmit = styled(Button).attrs(() => ({
   type: 'submit',
 }))`
-font-size: var(--font-size-400);
+font-size: var(--font-size-500);
 `;
