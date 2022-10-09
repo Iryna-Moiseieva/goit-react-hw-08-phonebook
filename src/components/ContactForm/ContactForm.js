@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { toast } from 'react-toastify';
+import { toast } from 'react-hot-toast';
 import { addContact } from '../../redux/contacts/operations';
 import { selectAllContacts} from '../../redux/contacts/selectors';
 
@@ -46,6 +46,7 @@ export default function ContactForm() {
     }
 
     dispatch(addContact({ name, number }));
+    toast.success(`${name} was created!`);
     reset();
   };
 

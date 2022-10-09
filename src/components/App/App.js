@@ -3,10 +3,12 @@ import { useDispatch } from 'react-redux';
 import { Routes, Route } from 'react-router-dom';
 import { refreshUser } from '../../redux/auth/operations';
 import { useAuth } from '../../hooks/useAuth';
+import { Toaster } from 'react-hot-toast';
 
 import Layout from '../Layout';
-import PrivateRoute from 'components/PrivateRoute';
-import RestrictedRoute from 'components/RestrictedRoute';
+import Loader from '../Loader';
+import PrivateRoute from '../PrivateRoute';
+import RestrictedRoute from '../RestrictedRoute';
 
 const HomePage = lazy(() => import('../../pages/HomePage'));
 const RegisterPage = lazy(() => import('../../pages/RegisterPage'));
@@ -23,9 +25,9 @@ export default function App() {
   }, [dispatch]);
 
   return isRefreshing ? (
-    <b>Refreshing user...</b>
+    <Loader />
   ) : (
-    <div>
+      <div>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
@@ -45,7 +47,8 @@ export default function App() {
             <PrivateRoute redirectTo="/login" component={<ContactsPage />} />
             } />
         </Route>
-      </Routes>
+          </Routes>
+        <Toaster />
     </div>
   );
 };

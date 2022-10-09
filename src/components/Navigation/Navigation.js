@@ -7,7 +7,6 @@ import {
   NavList,
   NavItem,
   LinkStyled,
-
 } from './Navigation.styles';
 
 
@@ -17,7 +16,7 @@ export default function Navigation() {
 return (
   <StyledHeaderNav>
     <Logo to="/">
-      <FcMultipleSmartphones size={40}/>
+      <FcMultipleSmartphones size={80}/>
     </Logo>
 
       <NavList>

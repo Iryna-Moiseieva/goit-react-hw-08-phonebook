@@ -1,6 +1,6 @@
-import {useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { toast } from 'react-hot-toast';
 import { register } from '../../redux/auth/operations';
-
 import Section from '../Section';
 import Container from '../Container';
 import {
@@ -29,6 +29,7 @@ export default function RegisterForm () {
         password: form.elements.password.value,
       })
     );
+    toast.success('Registration completed!');
     form.reset();
   };
 

@@ -1,4 +1,5 @@
 import { useDispatch } from 'react-redux';
+import { toast } from 'react-hot-toast';
 import { logIn } from '../../redux/auth/operations';
 import Section from '../Section';
 import Container from '../Container';
@@ -25,6 +26,7 @@ export default function LoginForm () {
         password: form.elements.password.value,
       })
     );
+    toast.success('Logged in successfully!');
     form.reset();
   };
 

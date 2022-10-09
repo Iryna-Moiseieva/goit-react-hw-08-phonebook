@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { deleteContact } from '../../redux/contacts/operations';
 import PropTypes from 'prop-types';
+import { toast } from 'react-hot-toast';
 import {
   ButtonDelete,
   IndexNumber,
@@ -12,7 +13,11 @@ import {
 
 export default function ContactItem({ id, name, number, index }) {
   const dispatch = useDispatch();
-  const handleDelete = () => dispatch(deleteContact(id));
+  const handleDelete = () => {
+    dispatch(deleteContact(id));
+    toast.success(`${name} has been deleted!`);
+  }
+
 
   return (
     <Container>

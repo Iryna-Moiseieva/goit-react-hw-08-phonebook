@@ -1,6 +1,5 @@
 import {Page, Title} from './HomePage.styles';
 
-
 export default function HomePage() {
   return (
     <Page>
